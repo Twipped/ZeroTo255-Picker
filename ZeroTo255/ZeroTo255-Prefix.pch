@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ZeroTo255' target in the 'ZeroTo255' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

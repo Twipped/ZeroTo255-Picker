@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27FB4D0A133AA35A009DBA36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB4D09133AA35A009DBA36 /* Cocoa.framework */; };
+		27FB4D14133AA35A009DBA36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27FB4D12133AA35A009DBA36 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroTo255.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FB4D09133AA35A009DBA36 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		27FB4D0C133AA35A009DBA36 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		27FB4D0D133AA35A009DBA36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		27FB4D0E133AA35A009DBA36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27FB4D11133AA35A009DBA36 /* ZeroTo255-Info.plist */ = {isa = PBXFileReference; path = "ZeroTo255-Info.plist"; sourceTree = "<group>"; };
+		27FB4D13133AA35A009DBA36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27FB4D15133AA35A009DBA36 /* ZeroTo255-Prefix.pch */ = {isa = PBXFileReference; path = "ZeroTo255-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27FB4D03133AA35A009DBA36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FB4D0A133AA35A009DBA36 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27FB4CFB133AA35A009DBA36 = {
+			isa = PBXGroup;
+			children = (
+				27FB4D0F133AA35A009DBA36 /* ZeroTo255 */,
+				27FB4D08133AA35A009DBA36 /* Frameworks */,
+				27FB4D07133AA35A009DBA36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27FB4D07133AA35A009DBA36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27FB4D08133AA35A009DBA36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D09133AA35A009DBA36 /* Cocoa.framework */,
+				27FB4D0B133AA35A009DBA36 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27FB4D0B133AA35A009DBA36 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D0C133AA35A009DBA36 /* AppKit.framework */,
+				27FB4D0D133AA35A009DBA36 /* CoreData.framework */,
+				27FB4D0E133AA35A009DBA36 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		27FB4D0F133AA35A009DBA36 /* ZeroTo255 */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D10133AA35A009DBA36 /* Supporting Files */,
+			);
+			path = ZeroTo255;
+			sourceTree = "<group>";
+		};
+		27FB4D10133AA35A009DBA36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27FB4D11133AA35A009DBA36 /* ZeroTo255-Info.plist */,
+				27FB4D12133AA35A009DBA36 /* InfoPlist.strings */,
+				27FB4D15133AA35A009DBA36 /* ZeroTo255-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27FB4D05133AA35A009DBA36 /* ZeroTo255 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27FB4D18133AA35A009DBA36 /* Build configuration list for PBXNativeTarget "ZeroTo255" */;
+			buildPhases = (
+				27FB4D02133AA35A009DBA36 /* Sources */,
+				27FB4D03133AA35A009DBA36 /* Frameworks */,
+				27FB4D04133AA35A009DBA36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeroTo255;
+			productName = ZeroTo255;
+			productReference = 27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27FB4CFD133AA35A009DBA36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "ChiperSoft Systems";
+			};
+			buildConfigurationList = 27FB4D00133AA35A009DBA36 /* Build configuration list for PBXProject "ZeroTo255" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27FB4CFB133AA35A009DBA36;
+			productRefGroup = 27FB4D07133AA35A009DBA36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27FB4D05133AA35A009DBA36 /* ZeroTo255 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27FB4D04133AA35A009DBA36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27FB4D14133AA35A009DBA36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27FB4D02133AA35A009DBA36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27FB4D12133AA35A009DBA36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27FB4D13133AA35A009DBA36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27FB4D16133AA35A009DBA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		27FB4D17133AA35A009DBA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		27FB4D19133AA35A009DBA36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeroTo255/ZeroTo255-Prefix.pch";
+				INFOPLIST_FILE = "ZeroTo255/ZeroTo255-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		27FB4D1A133AA35A009DBA36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZeroTo255/ZeroTo255-Prefix.pch";
+				INFOPLIST_FILE = "ZeroTo255/ZeroTo255-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27FB4D00133AA35A009DBA36 /* Build configuration list for PBXProject "ZeroTo255" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FB4D16133AA35A009DBA36 /* Debug */,
+				27FB4D17133AA35A009DBA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27FB4D18133AA35A009DBA36 /* Build configuration list for PBXNativeTarget "ZeroTo255" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27FB4D19133AA35A009DBA36 /* Debug */,
+				27FB4D1A133AA35A009DBA36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27FB4CFD133AA35A009DBA36 /* Project object */;
+}
