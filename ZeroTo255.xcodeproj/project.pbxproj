@@ -7,19 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27668195133AEEB2009F1FDA /* HSLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 27668194133AEEB2009F1FDA /* HSLColor.m */; };
+		27F902D8133AD743005E5E21 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 27F902D6133AD742005E5E21 /* icon.icns */; };
+		27F902D9133AD743005E5E21 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F902D7133AD742005E5E21 /* icon.png */; };
 		27FB4D0A133AA35A009DBA36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB4D09133AA35A009DBA36 /* Cocoa.framework */; };
 		27FB4D14133AA35A009DBA36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27FB4D12133AA35A009DBA36 /* InfoPlist.strings */; };
+		27FB4D1C133AA536009DBA36 /* ZeroTo255.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27FB4D1B133AA536009DBA36 /* ZeroTo255.xib */; };
+		27FB4D1F133AA77B009DBA36 /* ZeroTo255.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FB4D1E133AA77A009DBA36 /* ZeroTo255.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroTo255.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		27668193133AEEB2009F1FDA /* HSLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSLColor.h; sourceTree = "<group>"; };
+		27668194133AEEB2009F1FDA /* HSLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLColor.m; sourceTree = "<group>"; };
+		27F902D6133AD742005E5E21 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		27F902D7133AD742005E5E21 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroTo255.colorPicker; sourceTree = BUILT_PRODUCTS_DIR; };
 		27FB4D09133AA35A009DBA36 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27FB4D0C133AA35A009DBA36 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		27FB4D0D133AA35A009DBA36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		27FB4D0E133AA35A009DBA36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27FB4D11133AA35A009DBA36 /* ZeroTo255-Info.plist */ = {isa = PBXFileReference; path = "ZeroTo255-Info.plist"; sourceTree = "<group>"; };
+		27FB4D11133AA35A009DBA36 /* ZeroTo255-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZeroTo255-Info.plist"; sourceTree = "<group>"; };
 		27FB4D13133AA35A009DBA36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		27FB4D15133AA35A009DBA36 /* ZeroTo255-Prefix.pch */ = {isa = PBXFileReference; path = "ZeroTo255-Prefix.pch"; sourceTree = "<group>"; };
+		27FB4D15133AA35A009DBA36 /* ZeroTo255-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZeroTo255-Prefix.pch"; sourceTree = "<group>"; };
+		27FB4D1B133AA536009DBA36 /* ZeroTo255.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZeroTo255.xib; sourceTree = "<group>"; };
+		27FB4D1D133AA77A009DBA36 /* ZeroTo255.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroTo255.h; sourceTree = "<group>"; };
+		27FB4D1E133AA77A009DBA36 /* ZeroTo255.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroTo255.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +58,7 @@
 		27FB4D07133AA35A009DBA36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */,
+				27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				27FB4D10133AA35A009DBA36 /* Supporting Files */,
+				27FB4D1B133AA536009DBA36 /* ZeroTo255.xib */,
+				27FB4D1D133AA77A009DBA36 /* ZeroTo255.h */,
+				27FB4D1E133AA77A009DBA36 /* ZeroTo255.m */,
+				27668193133AEEB2009F1FDA /* HSLColor.h */,
+				27668194133AEEB2009F1FDA /* HSLColor.m */,
 			);
 			path = ZeroTo255;
 			sourceTree = "<group>";
@@ -81,6 +98,8 @@
 		27FB4D10133AA35A009DBA36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27F902D6133AD742005E5E21 /* icon.icns */,
+				27F902D7133AD742005E5E21 /* icon.png */,
 				27FB4D11133AA35A009DBA36 /* ZeroTo255-Info.plist */,
 				27FB4D12133AA35A009DBA36 /* InfoPlist.strings */,
 				27FB4D15133AA35A009DBA36 /* ZeroTo255-Prefix.pch */,
@@ -105,7 +124,7 @@
 			);
 			name = ZeroTo255;
 			productName = ZeroTo255;
-			productReference = 27FB4D06133AA35A009DBA36 /* ZeroTo255.bundle */;
+			productReference = 27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -139,6 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				27FB4D14133AA35A009DBA36 /* InfoPlist.strings in Resources */,
+				27FB4D1C133AA536009DBA36 /* ZeroTo255.xib in Resources */,
+				27F902D8133AD743005E5E21 /* icon.icns in Resources */,
+				27F902D9133AD743005E5E21 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FB4D1F133AA77B009DBA36 /* ZeroTo255.m in Sources */,
+				27668195133AEEB2009F1FDA /* HSLColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +202,12 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "~/Library/ColorPickers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
+				VALID_ARCHS = "i386 x86_64 PPC";
 			};
 			name = Debug;
 		};
@@ -193,8 +220,11 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "~/Library/ColorPickers";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
+				SYMROOT = "$(PROJECT_DIR)/build";
+				VALID_ARCHS = "i386 x86_64 PPC";
 			};
 			name = Release;
 		};
@@ -202,15 +232,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "~/Library/ColorPickers";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZeroTo255/ZeroTo255-Prefix.pch";
 				INFOPLIST_FILE = "ZeroTo255/ZeroTo255-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(HOME)/Library/ColorPickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = colorPicker;
 			};
 			name = Debug;
 		};
@@ -224,9 +255,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZeroTo255/ZeroTo255-Prefix.pch";
 				INFOPLIST_FILE = "ZeroTo255/ZeroTo255-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(HOME)/Library/ColorPickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = colorPicker;
 			};
 			name = Release;
 		};
@@ -249,6 +280,7 @@
 				27FB4D1A133AA35A009DBA36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
