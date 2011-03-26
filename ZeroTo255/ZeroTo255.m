@@ -38,12 +38,6 @@
 
 #pragma mark Color exchanges
 
-- (void)colorChanged:(id)sender {
-
-    //NSLog(@"color changed: %@", sender);
-
-    
-}
 
 - (void)setColor:(NSColor *)color {
 
@@ -65,8 +59,10 @@
 	if (nil != colorInCorrectColorSpace) { 
 		color = colorInCorrectColorSpace; 
         
-		str = [self hexForColor:color];
-        [hexField setStringValue:str];
+        if (!holdTheFormat) {
+            str = [ZeroTo255 hexForColor:color];
+            [hexField setStringValue:str];
+        }
     
         hsl = [[[HSLColor alloc] initFromColor:color] autorelease];
 
@@ -100,13 +96,35 @@
     
 }
              
--(NSString *) hexForColor:(NSColor *)color {
++ (NSString *) hexForColor:(NSColor *)color {
 	NSString *str = @"?";
     str = [NSString stringWithFormat:@"#%02X%02X%02X",
            (unsigned int)(255*[color redComponent]),
            (unsigned int)(255*[color greenComponent]),
            (unsigned int)(255*[color blueComponent])];
     return str;
+}
+
++ (NSColor *) colorFromHex:(NSString *) start {
+    NSString* inColorString = [[start componentsSeparatedByCharactersInSet:[[NSCharacterSet characterSetWithCharactersInString:@"0123456789ABCDEF"] invertedSet]] componentsJoinedByString:@""];
+
+	NSColor *result = nil;
+	unsigned int colorCode = 0;
+	unsigned char redByte, greenByte, blueByte;
+	
+	if (nil != inColorString) {
+		NSScanner *scanner = [NSScanner scannerWithString:inColorString];
+		(void) [scanner scanHexInt:&colorCode];	// ignore error
+	}
+	redByte		= (unsigned char) (colorCode >> 16);
+	greenByte	= (unsigned char) (colorCode >> 8);
+	blueByte	= (unsigned char) (colorCode);	// masks off high bits
+	result = [NSColor
+                  colorWithDeviceRed:	(float)redByte	/ 0xff
+                               green:	(float)greenByte/ 0xff
+                                blue:	(float)blueByte	/ 0xff
+                               alpha:   1.0];
+	return result;
 }
 
 #pragma mark Color Picker Plugin Implementation
@@ -176,7 +194,7 @@
     
     NSColor *col = [colorsList objectAtIndex:row];
     
-    NSString *hexText = [self hexForColor:col];
+    NSString *hexText = [ZeroTo255 hexForColor:col];
     return hexText;
     
 }
@@ -197,7 +215,18 @@
     NSColor *col = [colorsList objectAtIndex:row];
 
     //[self setColor:col];
-    [[self colorPanel] setColor:col];	
+    [[self colorPanel] setColor:col];
+}
+
+- (void)controlTextDidChange:(NSNotification *)aNotification {
+    NSString *str = [hexField stringValue];
+	NSColor *col = [ZeroTo255 colorFromHex:str];
+    
+	//NSLog(@"color hex text did change: %@ %@", str, col);
+    holdTheFormat = YES;
+    [[self colorPanel] setColor:col];
+    holdTheFormat = NO;
+
 }
 
 @end

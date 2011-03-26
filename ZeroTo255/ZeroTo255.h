@@ -18,9 +18,12 @@
 
     NSColor *currColor;
     NSMutableArray *colorsList;
+    
+    BOOL holdTheFormat;
 
 }
 
--(NSString *) hexForColor:(NSColor *)color;
++(NSString *) hexForColor:(NSColor *)color;
++ (NSColor *) colorFromHex:(NSString *) inColorString;
 
 @end
