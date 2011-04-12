@@ -21,7 +21,7 @@
 		27668194133AEEB2009F1FDA /* HSLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSLColor.m; sourceTree = "<group>"; };
 		27F902D6133AD742005E5E21 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		27F902D7133AD742005E5E21 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroTo255.colorPicker; sourceTree = BUILT_PRODUCTS_DIR; };
+		27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ZeroTo255.colorPicker; path = /Users/chiper/ChiperSoft/ZeroTo255/build/Release/ZeroTo255.colorPicker; sourceTree = "<absolute>"; };
 		27FB4D09133AA35A009DBA36 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27FB4D0C133AA35A009DBA36 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		27FB4D0D133AA35A009DBA36 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -58,7 +58,6 @@
 		27FB4D07133AA35A009DBA36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27FB4D06133AA35A009DBA36 /* ZeroTo255.colorPicker */,
 			);
 			name = Products;
 			sourceTree = "<group>";
